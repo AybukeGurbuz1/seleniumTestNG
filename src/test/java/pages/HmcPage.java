@@ -7,11 +7,13 @@ import utilities.Driver;
 
 public class HmcPage {
     public HmcPage() {
+
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "//*[text()='Log in']")
     public WebElement login;
+
     @FindBy(xpath = "//*[@id='UserName']")
     public WebElement userName;
 
@@ -21,4 +23,21 @@ public class HmcPage {
     @FindBy(xpath = "//*[text()='Try again please']")
     public WebElement girisYapilamadi;
 
+    @FindBy(xpath = "//*[text()='Hotel Management']")
+    public WebElement hotelManagement;
+
+    @FindBy(xpath = "(//*[@class='icon-calendar'])[4]")
+    public WebElement roomReservation;
+
+    @FindBy(xpath = "//*[text()='Add Room Reservation ']")
+    public WebElement addRoom;
+
+    @FindBy(xpath = "//*[@id='IDUser']")
+    public WebElement idUser;
+
+    @FindBy(xpath = "//*[@class='bootbox-body']")
+    public WebElement roomReservationText;
+
+    @FindBy(xpath = "//*[text()='OK']")
+    public WebElement okButton;
 }

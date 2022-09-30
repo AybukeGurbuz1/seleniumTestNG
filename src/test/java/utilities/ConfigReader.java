@@ -22,7 +22,7 @@ public class ConfigReader {
         /*
         test metodundan yolladığımız string key değerini alıp
         Properties class'ından getProperty() methodunu kullanarak
-        bu key'e ait value'yu bize getirir
+        bu key'e ait value'yu bize getirir //
          */
         return properties.getProperty(key);
     }

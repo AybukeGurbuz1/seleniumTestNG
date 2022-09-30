@@ -14,5 +14,9 @@ public class C01_SingletonPattern {
         SingletonPattern : tekli kullanım demektir. Bir class'ın farklı class'lardan
         obje oluşturarak kullanımını engellemektir.
          */
+
+        //SingletonPattern : tekli kullanim demektir. Bir class'in farkli class'lardan
+        //obje olusturarak kullanimini engellemektir bu sebeple defoult consractir yerine
+        // private Driver() consraktiri ekledik
     }
 }
