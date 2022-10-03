@@ -46,7 +46,7 @@ public class C03_E2ETest {
                 .sendKeys(Keys.TAB).sendKeys(Keys.SPACE).sendKeys(Keys.TAB).sendKeys(Keys.TAB)
                 .sendKeys(Keys.ENTER).perform();
 
-        //“RoomReservation was inserted successfully” textinin göründüğünü test edin.
+        //“RoomReservation was inserted successfully” textinin göründüğünü test edin..
         Thread.sleep(4000);
         Assert.assertTrue(hmcPage.roomReservationMessage.isDisplayed());
         //OK butonuna tıklayın.
