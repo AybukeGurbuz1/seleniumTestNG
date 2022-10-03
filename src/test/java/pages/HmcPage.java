@@ -35,8 +35,24 @@ public class HmcPage {
     @FindBy(xpath = "//*[@id='IDUser']")
     public WebElement idUser;
 
+    @FindBy(xpath = "//*[@id='IDHotelRoom']")
+    public WebElement idHotelRoom;
+
+    @FindBy(xpath = "//*[@id='Price']")
+    public WebElement price;
+
+    @FindBy(xpath = "//*[@name='DateStart']")
+    public WebElement dateStart;
+
+    @FindBy(xpath = "//*[@id='DateEnd']")
+    public WebElement dateEnd;
+
+
+    @FindBy(xpath = "//button[@id='btnSubmit']")
+    public WebElement save;
+
     @FindBy(xpath = "//*[@class='bootbox-body']")
-    public WebElement roomReservationText;
+    public WebElement roomReservationMessage;
 
     @FindBy(xpath = "//*[text()='OK']")
     public WebElement okButton;
