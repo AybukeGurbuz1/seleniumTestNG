@@ -16,7 +16,7 @@ public abstract class TestBaseBeforeMethodAfterMethod {
 
     // TestNG framework'unde @Before ve @After notasyonları yerine @BeforeMethod ve @AfterMethod kullanılır
     //Çalışma prensibi JUnit deki Before,After ile aynıdır
-    @BeforeMethod
+    @BeforeMethod (groups = "gp1")
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -27,7 +27,7 @@ public abstract class TestBaseBeforeMethodAfterMethod {
         tarih = date.format(formater);
     }
 
-    @AfterMethod
+    @AfterMethod (groups = "gp1")
     public void tearDown() {
         driver.quit();
     }
